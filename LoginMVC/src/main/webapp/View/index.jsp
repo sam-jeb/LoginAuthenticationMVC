@@ -17,9 +17,11 @@
 
     <input type="hidden" name="source" value="login">
     <button type="submit" >Submit</button>
-
 </form>
+
 <form  action="/RequestContoller">
     <button type="submit" >Signup</button>
+
+${error}
 </body>
 </html>

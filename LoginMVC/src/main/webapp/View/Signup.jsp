@@ -31,7 +31,7 @@
 
   <input type="hidden" name="source" value="signup">
   <button type="submit" >Submit</button>
-
+${error}
 </form>
 </body>
 </html>

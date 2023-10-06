@@ -1,56 +1,63 @@
 package com.service;
 
+import com.controller.ErrorDispatcher;
 import com.model.UserDAO;
+import jakarta.servlet.ServletException;
 import org.bson.Document;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.SortedMap;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class BadLoginChecker {
+    Logger logger = Logger.getLogger(BadLoginChecker.class.getName());
+    ErrorDispatcher errorobj = new ErrorDispatcher();
     UserDAO dataobj = new UserDAO();
-
-    long CooldownTime=1440;
     Date date = new Date();
+    long CooldownTime=86400;// Cooldown time of 24 hrs in seconds
     long currentattempttime=date.getTime();
     boolean AuthAttempts(int attempts, long lastattempt){
-        long milliseconds=currentattempttime-lastattempt;
-        long checkminutes = TimeUnit.MILLISECONDS.toMinutes(milliseconds);
+        long milliseconds=currentattempttime-lastattempt; //Difference of current time and last login attempt gives the time duration
+        long timediff = TimeUnit.MILLISECONDS.toSeconds(milliseconds); //Convert milliseconds to seconds
         if (attempts<3){
-            return true;
+            return true; // login attempts less than 3 , return true
         }
         else {
-            if (checkminutes>CooldownTime)
+            if (timediff>CooldownTime)
             {
-                return true;
+                return true; // login attempts more than 3 but if time difference time is more that cooldown time, return true
             }
             else {
-                return false;
+                return false; // login attempts more than 3 but if time difference time is less that cooldown time, return false
             }
         }
     }
 
-    void logindetailprinter(boolean failtype,String email){
-        if(!failtype){
+    void logindetailprinter(String email) throws ServletException, IOException {
             Document response=dataobj.Datagetter(email);
-            String attempt= String.valueOf(response.get("attempts"));
-            int attempts=3-Integer.parseInt(attempt);
-            System.out.println("Password Wrong");
+
+            String attempt= String.valueOf(response.get("attempts"));// Get number of attempts
+            int attempts=3-Integer.parseInt(attempt);// Calculate attempts left
+
             if (attempts>0){
-                System.out.println("You have "+attempts+" attempts left");
+                String errormsg="You have "+attempts+" attempts left";
+                errorobj.ErrorHandler(errormsg); //Print error msg in UI
+                System.out.println(errormsg);
             }
+
             else if(attempts==0){
-                System.out.println("You have been locked out, Please try again after 24hrs");
-            }
-        }
-        else {
-            Document response=dataobj.Datagetter(email);
-            String lastattempt= String.valueOf(response.get("ldate"));
-            long militime = currentattempttime-Long.parseLong(lastattempt);
-            long hours =24-TimeUnit.MILLISECONDS.toHours(militime);
-            long minutes=1440-TimeUnit.MILLISECONDS.toMinutes(militime);
-            long seconds= 86400-TimeUnit.MILLISECONDS.toSeconds(militime);
-            System.out.println("Please wait "+hours+"hours:"+minutes+"minutes:"+seconds +"seconds");
+                System.out.println("You have been locked out");
+                //Calculate time before legal attempt
+                String lastattempt= String.valueOf(response.get("ldate"));
+                long militime = currentattempttime-Long.parseLong(lastattempt);
+                long hours = 24- (TimeUnit.MILLISECONDS.toHours(militime)%24+1);
+                long minutes= 60-(TimeUnit.MILLISECONDS.toMinutes(militime)%60+1);
+                long seconds=60-(TimeUnit.MILLISECONDS.toSeconds(militime)%60+1);
+                String errormsg="Please wait "+hours+" hours: "+minutes+" minutes:"+seconds+" seconds before trying again";
+                errorobj.ErrorHandler(errormsg);//Print error msg in UI
+                System.out.println("Please wait "+hours+" hours: "+minutes+" minutes:"+seconds+" seconds before trying again");
         }
     }
 }
