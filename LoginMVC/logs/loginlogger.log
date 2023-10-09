@@ -1,0 +1,144 @@
+2023-10-09 14:20:56,164 INFO c.c.RequestContoller [http-nio-8080-exec-5] DoPost called
+2023-10-09 14:20:56,167 INFO c.c.RequestContoller [http-nio-8080-exec-5] submit type:login
+2023-10-09 14:20:56,177 ERROR c.c.RequestContoller [http-nio-8080-exec-5] Null entry exception detected !!
+2023-10-09 14:20:56,606 INFO o.m.d.cluster [http-nio-8080-exec-5] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:20:56,738 INFO o.m.d.connection [cluster-ClusterId{value='6523bef040fc8000e0e04944', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:2021}] to localhost:27017
+2023-10-09 14:20:56,755 INFO o.m.d.cluster [cluster-ClusterId{value='6523bef040fc8000e0e04944', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4792800}
+2023-10-09 14:20:56,797 INFO o.m.d.connection [http-nio-8080-exec-5] Opened connection [connectionId{localValue:2, serverValue:2022}] to localhost:27017
+2023-10-09 14:20:56,860 INFO c.m.UserDAO [http-nio-8080-exec-5] Document fetched and returned from the DB
+2023-10-09 14:20:56,860 ERROR c.c.RequestContoller [http-nio-8080-exec-5] Invalid email entered !!
+2023-10-09 14:21:18,915 INFO c.c.RequestContoller [http-nio-8080-exec-7] DoPost called
+2023-10-09 14:21:18,916 INFO c.c.RequestContoller [http-nio-8080-exec-7] submit type:login
+2023-10-09 14:21:18,916 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:18,918 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:18,921 INFO o.m.d.connection [cluster-ClusterId{value='6523bf0640fc8000e0e04945', description='null'}-localhost:27017] Opened connection [connectionId{localValue:3, serverValue:2023}] to localhost:27017
+2023-10-09 14:21:18,922 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf0640fc8000e0e04945', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=490700}
+2023-10-09 14:21:18,924 INFO o.m.d.connection [http-nio-8080-exec-7] Opened connection [connectionId{localValue:4, serverValue:2024}] to localhost:27017
+2023-10-09 14:21:18,936 INFO c.m.UserDAO [http-nio-8080-exec-7] Document fetched and returned from the DB
+2023-10-09 14:21:18,937 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:18,941 INFO o.m.d.connection [cluster-ClusterId{value='6523bf0640fc8000e0e04946', description='null'}-localhost:27017] Opened connection [connectionId{localValue:5, serverValue:2025}] to localhost:27017
+2023-10-09 14:21:18,943 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf0640fc8000e0e04946', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1119500}
+2023-10-09 14:21:18,944 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:18,953 INFO o.m.d.connection [cluster-ClusterId{value='6523bf0640fc8000e0e04947', description='null'}-localhost:27017] Opened connection [connectionId{localValue:6, serverValue:2026}] to localhost:27017
+2023-10-09 14:21:18,955 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf0640fc8000e0e04947', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1468000}
+2023-10-09 14:21:18,968 INFO o.m.d.connection [http-nio-8080-exec-7] Opened connection [connectionId{localValue:7, serverValue:2027}] to localhost:27017
+2023-10-09 14:21:18,970 INFO c.m.UserDAO [http-nio-8080-exec-7] Document fetched and returned from the DB
+2023-10-09 14:21:18,972 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:18,974 INFO c.b.User [http-nio-8080-exec-7] Document updater object created
+2023-10-09 14:21:18,974 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:18,979 INFO o.m.d.connection [cluster-ClusterId{value='6523bf0640fc8000e0e04948', description='null'}-localhost:27017] Opened connection [connectionId{localValue:8, serverValue:2028}] to localhost:27017
+2023-10-09 14:21:18,981 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf0640fc8000e0e04948', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1227400}
+2023-10-09 14:21:18,985 INFO o.m.d.connection [http-nio-8080-exec-7] Opened connection [connectionId{localValue:9, serverValue:2029}] to localhost:27017
+2023-10-09 14:21:18,987 INFO c.m.UserDAO [http-nio-8080-exec-7] Document fetched and returned from the DB
+2023-10-09 14:21:19,051 INFO c.m.UserDAO [http-nio-8080-exec-7] Document updated in the DB
+2023-10-09 14:21:19,057 INFO o.m.d.connection [http-nio-8080-exec-7] Opened connection [connectionId{localValue:10, serverValue:2030}] to localhost:27017
+2023-10-09 14:21:19,059 INFO c.m.UserDAO [http-nio-8080-exec-7] Document fetched and returned from the DB
+2023-10-09 14:21:19,060 ERROR c.s.BadLoginChecker [http-nio-8080-exec-7] User entered wrong password, has 2 left
+2023-10-09 14:21:19,065 ERROR c.c.RequestContoller [http-nio-8080-exec-7] Login Failed !!
+2023-10-09 14:21:29,397 INFO c.c.RequestContoller [http-nio-8080-exec-8] DoPost called
+2023-10-09 14:21:29,398 INFO c.c.RequestContoller [http-nio-8080-exec-8] submit type:login
+2023-10-09 14:21:29,398 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:29,400 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:29,405 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1140fc8000e0e04949', description='null'}-localhost:27017] Opened connection [connectionId{localValue:11, serverValue:2031}] to localhost:27017
+2023-10-09 14:21:29,406 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1140fc8000e0e04949', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1038000}
+2023-10-09 14:21:29,411 INFO o.m.d.connection [http-nio-8080-exec-8] Opened connection [connectionId{localValue:12, serverValue:2032}] to localhost:27017
+2023-10-09 14:21:29,412 INFO c.m.UserDAO [http-nio-8080-exec-8] Document fetched and returned from the DB
+2023-10-09 14:21:29,413 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:29,415 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:29,416 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:29,419 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1140fc8000e0e0494a', description='null'}-localhost:27017] Opened connection [connectionId{localValue:13, serverValue:2033}] to localhost:27017
+2023-10-09 14:21:29,422 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1140fc8000e0e0494a', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1850400}
+2023-10-09 14:21:29,423 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1140fc8000e0e0494b', description='null'}-localhost:27017] Opened connection [connectionId{localValue:14, serverValue:2034}] to localhost:27017
+2023-10-09 14:21:29,426 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1140fc8000e0e0494b', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1925800}
+2023-10-09 14:21:29,429 INFO o.m.d.connection [http-nio-8080-exec-8] Opened connection [connectionId{localValue:15, serverValue:2035}] to localhost:27017
+2023-10-09 14:21:29,432 INFO c.m.UserDAO [http-nio-8080-exec-8] Document fetched and returned from the DB
+2023-10-09 14:21:29,433 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:29,437 INFO c.b.User [http-nio-8080-exec-8] Document updater object created
+2023-10-09 14:21:29,437 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:29,443 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1140fc8000e0e0494c', description='null'}-localhost:27017] Opened connection [connectionId{localValue:16, serverValue:2036}] to localhost:27017
+2023-10-09 14:21:29,446 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1140fc8000e0e0494c', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1506800}
+2023-10-09 14:21:29,451 INFO o.m.d.connection [http-nio-8080-exec-8] Opened connection [connectionId{localValue:17, serverValue:2037}] to localhost:27017
+2023-10-09 14:21:29,454 INFO c.m.UserDAO [http-nio-8080-exec-8] Document fetched and returned from the DB
+2023-10-09 14:21:29,456 INFO c.m.UserDAO [http-nio-8080-exec-8] Document updated in the DB
+2023-10-09 14:21:29,456 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:29,458 INFO o.m.d.cluster [http-nio-8080-exec-8] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:29,462 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1140fc8000e0e0494d', description='null'}-localhost:27017] Opened connection [connectionId{localValue:18, serverValue:2038}] to localhost:27017
+2023-10-09 14:21:29,464 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1140fc8000e0e0494d', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=548100}
+2023-10-09 14:21:29,467 INFO o.m.d.connection [http-nio-8080-exec-8] Opened connection [connectionId{localValue:19, serverValue:2039}] to localhost:27017
+2023-10-09 14:21:29,469 INFO c.m.UserDAO [http-nio-8080-exec-8] Document fetched and returned from the DB
+2023-10-09 14:21:29,473 INFO c.b.User [http-nio-8080-exec-8] User bean built
+2023-10-09 14:21:29,473 INFO c.s.CreateEntry [http-nio-8080-exec-8] User bean object returned
+2023-10-09 14:21:29,672 INFO c.c.RequestContoller [http-nio-8080-exec-8] Login Successful
+2023-10-09 14:21:40,582 INFO c.c.RequestContoller [http-nio-8080-exec-10] DoPost called
+2023-10-09 14:21:40,583 INFO c.c.RequestContoller [http-nio-8080-exec-10] submit type:login
+2023-10-09 14:21:40,583 INFO o.m.d.cluster [http-nio-8080-exec-10] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:40,584 INFO o.m.d.cluster [http-nio-8080-exec-10] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:40,587 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1c40fc8000e0e0494e', description='null'}-localhost:27017] Opened connection [connectionId{localValue:20, serverValue:2040}] to localhost:27017
+2023-10-09 14:21:40,588 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1c40fc8000e0e0494e', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=607000}
+2023-10-09 14:21:40,590 INFO o.m.d.connection [http-nio-8080-exec-10] Opened connection [connectionId{localValue:21, serverValue:2041}] to localhost:27017
+2023-10-09 14:21:40,591 INFO c.m.UserDAO [http-nio-8080-exec-10] Document fetched and returned from the DB
+2023-10-09 14:21:40,592 INFO o.m.d.cluster [http-nio-8080-exec-10] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:40,593 INFO o.m.d.cluster [http-nio-8080-exec-10] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:40,595 INFO o.m.d.cluster [http-nio-8080-exec-10] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:40,596 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1c40fc8000e0e0494f', description='null'}-localhost:27017] Opened connection [connectionId{localValue:22, serverValue:2042}] to localhost:27017
+2023-10-09 14:21:40,598 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1c40fc8000e0e0494f', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1127500}
+2023-10-09 14:21:40,598 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1c40fc8000e0e04950', description='null'}-localhost:27017] Opened connection [connectionId{localValue:23, serverValue:2043}] to localhost:27017
+2023-10-09 14:21:40,599 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1c40fc8000e0e04950', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=918500}
+2023-10-09 14:21:40,601 INFO o.m.d.connection [http-nio-8080-exec-10] Opened connection [connectionId{localValue:24, serverValue:2044}] to localhost:27017
+2023-10-09 14:21:40,603 INFO c.m.UserDAO [http-nio-8080-exec-10] Document fetched and returned from the DB
+2023-10-09 14:21:40,603 INFO o.m.d.cluster [http-nio-8080-exec-10] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:40,605 INFO c.b.User [http-nio-8080-exec-10] Document updater object created
+2023-10-09 14:21:40,605 INFO o.m.d.cluster [http-nio-8080-exec-10] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:40,609 INFO o.m.d.connection [cluster-ClusterId{value='6523bf1c40fc8000e0e04951', description='null'}-localhost:27017] Opened connection [connectionId{localValue:25, serverValue:2045}] to localhost:27017
+2023-10-09 14:21:40,610 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf1c40fc8000e0e04951', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=487500}
+2023-10-09 14:21:40,613 INFO o.m.d.connection [http-nio-8080-exec-10] Opened connection [connectionId{localValue:26, serverValue:2046}] to localhost:27017
+2023-10-09 14:21:40,614 INFO c.m.UserDAO [http-nio-8080-exec-10] Document fetched and returned from the DB
+2023-10-09 14:21:40,615 INFO c.m.UserDAO [http-nio-8080-exec-10] Document updated in the DB
+2023-10-09 14:21:40,618 INFO o.m.d.connection [http-nio-8080-exec-10] Opened connection [connectionId{localValue:27, serverValue:2047}] to localhost:27017
+2023-10-09 14:21:40,618 INFO c.m.UserDAO [http-nio-8080-exec-10] Document fetched and returned from the DB
+2023-10-09 14:21:40,627 ERROR c.s.BadLoginChecker [http-nio-8080-exec-10] User locked out, has to wait 18 hours: 0 minutes:51 seconds before trying again
+2023-10-09 14:21:40,627 ERROR c.c.RequestContoller [http-nio-8080-exec-10] Login Failed !!
+2023-10-09 14:21:56,237 INFO c.c.RequestContoller [http-nio-8080-exec-2] DoPost called
+2023-10-09 14:21:56,238 INFO c.c.RequestContoller [http-nio-8080-exec-2] submit type:signup
+2023-10-09 14:21:56,239 ERROR c.s.SignupValidator [http-nio-8080-exec-2] Null entry exception detected !!
+2023-10-09 14:21:56,244 INFO o.m.d.cluster [http-nio-8080-exec-2] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:21:56,245 INFO o.m.d.cluster [http-nio-8080-exec-2] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:21:56,251 INFO o.m.d.connection [cluster-ClusterId{value='6523bf2c40fc8000e0e04952', description='null'}-localhost:27017] Opened connection [connectionId{localValue:28, serverValue:2048}] to localhost:27017
+2023-10-09 14:21:56,252 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf2c40fc8000e0e04952', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=815700}
+2023-10-09 14:21:56,256 INFO o.m.d.connection [http-nio-8080-exec-2] Opened connection [connectionId{localValue:29, serverValue:2049}] to localhost:27017
+2023-10-09 14:21:56,259 INFO c.m.UserDAO [http-nio-8080-exec-2] Document fetched and returned from the DB
+2023-10-09 14:21:56,259 ERROR c.s.SignupValidator [http-nio-8080-exec-2] passwords exception detected !!
+2023-10-09 14:22:05,156 INFO c.c.RequestContoller [http-nio-8080-exec-4] DoPost called
+2023-10-09 14:22:05,157 INFO c.c.RequestContoller [http-nio-8080-exec-4] submit type:signup
+2023-10-09 14:22:05,158 INFO o.m.d.cluster [http-nio-8080-exec-4] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:22:05,159 INFO o.m.d.cluster [http-nio-8080-exec-4] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:22:05,163 INFO o.m.d.connection [cluster-ClusterId{value='6523bf3540fc8000e0e04953', description='null'}-localhost:27017] Opened connection [connectionId{localValue:30, serverValue:2050}] to localhost:27017
+2023-10-09 14:22:05,164 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf3540fc8000e0e04953', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=533600}
+2023-10-09 14:22:05,167 INFO o.m.d.connection [http-nio-8080-exec-4] Opened connection [connectionId{localValue:31, serverValue:2051}] to localhost:27017
+2023-10-09 14:22:05,168 INFO c.m.UserDAO [http-nio-8080-exec-4] Document fetched and returned from the DB
+2023-10-09 14:22:05,168 ERROR c.s.SignupValidator [http-nio-8080-exec-4] Email already exist in DB
+2023-10-09 14:22:21,285 INFO c.c.RequestContoller [http-nio-8080-exec-5] DoPost called
+2023-10-09 14:22:21,286 INFO c.c.RequestContoller [http-nio-8080-exec-5] submit type:signup
+2023-10-09 14:22:21,287 INFO o.m.d.cluster [http-nio-8080-exec-5] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:22:21,289 INFO o.m.d.cluster [http-nio-8080-exec-5] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:22:21,292 INFO o.m.d.connection [cluster-ClusterId{value='6523bf4540fc8000e0e04954', description='null'}-localhost:27017] Opened connection [connectionId{localValue:32, serverValue:2052}] to localhost:27017
+2023-10-09 14:22:21,293 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf4540fc8000e0e04954', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=589900}
+2023-10-09 14:22:21,296 INFO o.m.d.connection [http-nio-8080-exec-5] Opened connection [connectionId{localValue:33, serverValue:2053}] to localhost:27017
+2023-10-09 14:22:21,298 INFO c.m.UserDAO [http-nio-8080-exec-5] Document fetched and returned from the DB
+2023-10-09 14:22:21,298 ERROR c.s.SignupValidator [http-nio-8080-exec-5] passwords exception detected !!
+2023-10-09 14:22:36,159 INFO c.c.RequestContoller [http-nio-8080-exec-7] DoPost called
+2023-10-09 14:22:36,159 INFO c.c.RequestContoller [http-nio-8080-exec-7] submit type:signup
+2023-10-09 14:22:36,160 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:22:36,161 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-10-09 14:22:36,166 INFO o.m.d.connection [cluster-ClusterId{value='6523bf5440fc8000e0e04955', description='null'}-localhost:27017] Opened connection [connectionId{localValue:34, serverValue:2054}] to localhost:27017
+2023-10-09 14:22:36,167 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf5440fc8000e0e04955', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=676400}
+2023-10-09 14:22:36,170 INFO o.m.d.connection [http-nio-8080-exec-7] Opened connection [connectionId{localValue:35, serverValue:2055}] to localhost:27017
+2023-10-09 14:22:36,171 INFO c.m.UserDAO [http-nio-8080-exec-7] Document fetched and returned from the DB
+2023-10-09 14:22:36,172 INFO o.m.d.cluster [http-nio-8080-exec-7] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-10-09 14:22:36,173 INFO c.s.CreateEntry [http-nio-8080-exec-7] data handle object created
+2023-10-09 14:22:36,173 INFO c.b.User [http-nio-8080-exec-7] User bean built
+2023-10-09 14:22:36,176 INFO o.m.d.connection [cluster-ClusterId{value='6523bf5440fc8000e0e04956', description='null'}-localhost:27017] Opened connection [connectionId{localValue:36, serverValue:2056}] to localhost:27017
+2023-10-09 14:22:36,177 INFO o.m.d.cluster [cluster-ClusterId{value='6523bf5440fc8000e0e04956', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[6, 0, 8]}, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=465900}
+2023-10-09 14:22:36,191 INFO o.m.d.connection [http-nio-8080-exec-7] Opened connection [connectionId{localValue:37, serverValue:2057}] to localhost:27017
+2023-10-09 14:22:36,194 INFO c.m.UserDAO [http-nio-8080-exec-7] Document inserted into the DB
+2023-10-09 14:22:36,195 INFO c.c.RequestContoller [http-nio-8080-exec-7] User Created Successfully

@@ -1,20 +1,23 @@
 package com.service;
 
 import com.controller.ErrorDispatcher;
+import com.controller.RequestContoller;
 import com.model.UserDAO;
 import jakarta.servlet.ServletException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.bson.Document;
 
 import java.io.IOException;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 public class LoginValidator implements IValidateChecker{
-    Logger logger = Logger.getLogger(LoginValidator.class.getName());
+    private static Logger log= LogManager.getLogger(RequestContoller.class);
     ErrorDispatcher errorobj = new ErrorDispatcher(); //obj for error dispatcher
     public boolean loginnullChecker(String email, String pw) throws ServletException, IOException {
         //Check for null entries
         if (email.isEmpty()|| pw.isEmpty()){
+            log.error("Null entry exception detected !!");
             errorobj.ErrorHandler("Enter all fields");
             return false;
         }
@@ -26,6 +29,7 @@ public class LoginValidator implements IValidateChecker{
         Document response=emailobj.Datagetter(email);
         // Check for valid email
         if (response==null ){
+            log.error("Invalid email entered !!");
             errorobj.ErrorHandler("Invalid Email");
             System.out.println("Invalid Email");
             return false;
@@ -53,10 +57,11 @@ public class LoginValidator implements IValidateChecker{
             Login Credentials or Password fails, Update DB and print error message
          */
         else {
+
             loginupdaterobj.LoginUpdater(email,false); //Update attempts and last attempt in DB
             attempsobj.logindetailprinter(email); //Print error in UI
+            log.error("Login Failed !!");
             return false;
-
         }
     }
 

@@ -12,7 +12,10 @@
 </head>
 <body>
 <h1>User Details</h1>
-
 ${msg}
+<h4>Email: ${email}</h4>
+<h4>First Name: ${fname}</h4>
+<h4>Last Name: ${lname}</h4>
+
 </body>
 </html>

@@ -1,15 +1,23 @@
 package com.bean;
 
+import com.service.CreateEntry;
+import com.controller.UserDispatcher;
+import org.apache.logging.log4j.LogManager;
+
 public class User {
+    private static org.apache.logging.log4j.Logger log= LogManager.getLogger(User.class);
     String firstname;
     String lastname;
     String email;
     String password;
+    private CreateEntry dataobj;
+    private UserDispatcher userobj;
     public User(Builder builder) {
         this.firstname= builder.fname;
         this.lastname= builder.lname;
         this.email= builder.email;
         this.password= builder.password;
+        log.info("User bean built");
     }
     public String getFirstname() {
         return firstname;

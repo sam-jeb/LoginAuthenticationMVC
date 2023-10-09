@@ -6,7 +6,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class ErrorDispatcher extends RequestContoller{
+public class
+ErrorDispatcher extends RequestContoller{
 
     public void ErrorHandler(String error) throws ServletException, IOException {
         String login="login";
